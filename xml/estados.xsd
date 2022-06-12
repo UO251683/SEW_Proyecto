@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="estados">
+    <xs:complexType>
+      <xs:sequence minOccurs="1" maxOccurs="unbounded">
+        <xs:element ref="estado" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="estado">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="multiplicador" />
+        <xs:element ref="apariencia" />
+        <xs:element ref="requisitos" />
+      </xs:sequence>
+      <xs:attribute name="nombre" type="xs:string" use="required" />
+      <xs:attribute name="desgaste" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="multiplicador">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="cuerpo" />
+        <xs:element ref="ki" />
+        <xs:element ref="resistencia" />
+        <xs:element ref="agilidad" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="apariencia">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ojos" />
+        <xs:element ref="pelo" />
+        <xs:element ref="aura" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="requisitos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="poder_base" />
+        <xs:element ref="como_alcanzarla" />
+        <xs:element ref="detonante" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cuerpo" type="xs:string" />
+  <xs:element name="ki" type="xs:string" />
+  <xs:element name="resistencia" type="xs:string" />
+  <xs:element name="agilidad" type="xs:string" />
+  <xs:element name="ojos" type="xs:string" />
+  <xs:element name="pelo" type="xs:string" />
+  <xs:element name="aura" type="xs:string" />
+  <xs:element name="poder_base" type="xs:string" />
+  <xs:element name="como_alcanzarla" type="xs:string" />
+  <xs:element name="detonante" type="xs:string" />
+</xs:schema>

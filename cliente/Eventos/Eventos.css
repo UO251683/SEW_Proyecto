@@ -87,6 +87,10 @@ nav{
   background-color: #ff9900;
 }
 
+nav>a:hover {
+    background-color: blueviolet;
+}
+
 /*Especificidad: 002*/
 nav>a
 {
@@ -98,10 +102,6 @@ nav>a
   text-align: center;     
   display: inline-block;
   margin: 1%;
-}
-
-nav>a:hover {
-  background-color: blueviolet;
 }
 
 /*Especificidad: 002*/
@@ -159,12 +159,57 @@ form>fieldset>legend{
   text-align: center;     
 }
 
-
-/*Especificidad: 002*/
-/*
-form>input{
-  max-width: 15%;
+/*Especificidad: 001*/
+div {
+    width: 30%;
+    max-width: 100%;
+    text-align: center;
+    border: solid 0.2% #c2c2c2;
+    padding-bottom: 0.2%;
+    margin: auto;
+    background: black;
 }
-*/
-  
-  
+
+input[type=file] {
+    width: 75%;
+    padding: 5% 8%;
+    margin: 3% 0%;
+    border: 1% solid silver;
+    border-radius: 1%;
+    text-align: left;
+    color: #333;
+    background: #ccc;
+    margin-bottom: 5%;
+    text-align: center;     
+}
+
+input[type=button] {
+    background-color: orange;
+    border: none;
+    color: black;
+    padding: 5% 20%;
+    min-width: 21%;
+    text-decoration: none;
+    margin: 2% 1%;
+    cursor: pointer;
+}
+
+input[type=button]:disabled {
+    background: #F5F5F5;
+    color : #C3C3C3;
+}
+
+input[type=button]:hover {
+    background-color: lightgoldenrodyellow;
+}
+
+/*Especificidad: 001*/
+label{
+    color: orange;
+}
+
+/*Especificidad: 001*/
+pre{
+  background-color: black;
+  color: cyan;
+}

@@ -1,0 +1,144 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE estados SYSTEM "estados.dtd">
+
+<estados>
+    <!-- ESTADO 1 -->
+    <estado nombre="Base" desgaste="Nulo">
+        <multiplicador>
+            <cuerpo> x1 </cuerpo>
+            <ki> x1 </ki>
+            <resistencia> x1 </resistencia>
+            <agilidad> x1 </agilidad>
+        </multiplicador>
+        <apariencia>
+            <ojos> Naturales </ojos>
+            <pelo> Natural </pelo>
+            <aura> Natural </aura>
+        </apariencia>
+        <requisitos>
+            <poder_base> - </poder_base>
+            <como_alcanzarla> - </como_alcanzarla>
+            <detonante> - </detonante>
+        </requisitos>
+    </estado>
+    <!-- ESTADO 2 -->
+    <estado nombre="Oozaru" desgaste="Medio">
+        <multiplicador>
+            <cuerpo> x10 </cuerpo>
+            <ki> x10 </ki>
+            <resistencia> x20 </resistencia>
+            <agilidad> x1 </agilidad>
+        </multiplicador>
+        <apariencia>
+            <ojos> Rojos </ojos>
+            <pelo> Marrón oscuro </pelo>
+            <aura> Natural </aura>
+        </apariencia>
+        <requisitos>
+            <poder_base> - </poder_base>
+            <como_alcanzarla> Observar una luna llena artificial 
+            o natural que expulse ondas Blutz </como_alcanzarla>
+            <detonante> Contacto visual con la luna </detonante>
+        </requisitos>
+    </estado>
+    <!-- ESTADO 3 -->
+    <estado nombre="Super Saiyan" desgaste="Bajo">
+        <multiplicador>
+            <cuerpo> x55 </cuerpo>
+            <ki> x45 </ki>
+            <resistencia> x50 </resistencia>
+            <agilidad> x2 </agilidad>
+        </multiplicador>
+        <apariencia>
+            <ojos> Azules </ojos>
+            <pelo> Dorado y ligeramente en punta </pelo>
+            <aura> Dorada </aura>
+        </apariencia>
+        <requisitos>
+            <poder_base>3 millones UP</poder_base>
+            <como_alcanzarla>Sufrir un trauma enorme, 
+            como una pérdida de un ser querido</como_alcanzarla>
+            <detonante>Furia</detonante>
+        </requisitos>
+    </estado>
+    <!-- ESTADO 4 -->
+    <estado nombre="Super Saiyan fase 2" desgaste="Medio-Alto">
+        <multiplicador>
+            <cuerpo> x65 </cuerpo>
+            <ki> x55 </ki>
+            <resistencia> x60 </resistencia>
+            <agilidad> x2 </agilidad>
+        </multiplicador>
+        <apariencia>
+            <ojos> Azul verdoso </ojos>
+            <pelo> Dorado y espigado hacia arriba </pelo>
+            <aura> Dorada y salvaje </aura>
+        </apariencia>
+        <requisitos>
+            <poder_base>3,5 millones UP</poder_base>
+            <como_alcanzarla>Forzar el cuerpo para acumular más poder, 
+            acrecentando los músculos</como_alcanzarla>
+            <detonante>Fuerza bruta</detonante>
+        </requisitos>
+    </estado>
+    <!-- ESTADO 5 -->
+    <estado nombre="Super Saiyan fase 3" desgaste="Insostenible">
+        <multiplicador>
+            <cuerpo> x300 </cuerpo>
+            <ki> x200 </ki>
+            <resistencia> x400 </resistencia>
+            <agilidad> x0.2 </agilidad>
+        </multiplicador>
+        <apariencia>
+            <ojos> Azul verdoso </ojos>
+            <pelo> Dorado y espigado hacia arriba </pelo>
+            <aura> Dorada y salvaje </aura>
+        </apariencia>
+        <requisitos>
+            <poder_base>4 millones UP</poder_base>
+            <como_alcanzarla>Forzar el cuerpo al límite, acumulando todo el poder posible, 
+            haciendo que este se agrande de manera desconmensurada</como_alcanzarla>
+            <detonante>Fuerza bruta</detonante>
+        </requisitos>
+    </estado>
+    <!-- ESTADO 6 -->
+    <estado nombre="Super Saiyan 2" desgaste="Medio">
+        <multiplicador>
+            <cuerpo> x110 </cuerpo>
+            <ki> x90 </ki>
+            <resistencia> x100 </resistencia>
+            <agilidad> x5 </agilidad>
+        </multiplicador>
+        <apariencia>
+            <ojos> Verdes </ojos>
+            <pelo> Dorado y espigado hacia arriba </pelo>
+            <aura> Dorada y con truenos intermitentes alrededor </aura>
+        </apariencia>
+        <requisitos>
+            <poder_base>5 millones UP</poder_base>
+            <como_alcanzarla>Acostumbrar el cuerpo al Super Saiyan,
+            volviendolo tu estado base</como_alcanzarla>
+            <detonante>Furia</detonante>
+        </requisitos>
+    </estado>
+    <!-- ESTADO 7 -->
+    <estado nombre="Super Saiyan 3" desgaste="Muy Alto">
+        <multiplicador>
+            <cuerpo> x400 </cuerpo>
+            <ki> x400 </ki>
+            <resistencia> x400 </resistencia>
+            <agilidad> x10 </agilidad>
+        </multiplicador>
+        <apariencia>
+            <ojos> Verdes </ojos>
+            <pelo> Melena dorada y espigada hacia la espalda </pelo>
+            <aura> Dorada y con truenos intermitentes alrededor </aura>
+        </apariencia>
+        <requisitos>
+            <poder_base>50 millones UP</poder_base>
+            <como_alcanzarla>Acostumbrar el cuerpo a la transformación del Super Saiyan, 
+            haber alcanzado el Super Saiyan 2 y forzar al máximo el poder</como_alcanzarla>
+            <detonante>Fuerza Bruta, Control de Ki</detonante>
+        </requisitos>
+    </estado>
+</estados>

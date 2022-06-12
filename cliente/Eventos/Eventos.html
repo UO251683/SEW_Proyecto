@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Noé Fernández Moro" />
+    <meta name="description" content="Eventos realizados por la comunidad de Dragon Ball Z" />
+    <title>Eventos</title>
+    <link rel="stylesheet" href="Eventos.css" />
+    <script src="Eventos.js"></script>
+    <script src="Mapa.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="../../html_css/multimedia/images/logo_DBZ.png" alt="Logo" />
+            <a href="../../html_css/1.-Saiyans.html" accesskey="h" tabindex="1">Saga de los Saiyan</a>
+            <a href="../../html_css/2.-Androids.html" accesskey="p" tabindex="2">Saga de los Androides</a>
+            <a href="../../html_css/3.-Bu.html" accesskey="r" tabindex="3">Saga del Monstruo Buu</a>
+            <a href="../¡Calcula mi nivel!/Calculadora.html" accesskey="c" tabindex="4">¡Calcula mi nivel!</a>
+            <a href="../Eventos/Eventos.html" accesskey="e" tabindex="5">Eventos</a>
+        </nav>
+        <h1>
+            Eventos
+        </h1>
+    </header> 
+    <main>
+        <h2> Geolocalización de eventos </h2>
+        <div id="mapa">
+            <input type="button" value="Evento de la raza Saiyan" onclick="mapa.getMapa('mapa', 50.94705464227629, 6.9831490574673385, 'cologne');"/>
+            <input type="button" value="Evento de la raza Namekiana" onclick="mapa.getMapa('mapa', 41.374328615708734, 2.153434504876039, 'barcelona');"/>
+            <input type="button" value="Evento de la raza Demonio del Hielo" onclick="mapa.getMapa('mapa', 22.27828997691529, 114.18210286908132, 'hong_kong');"/>
+            <input type="button" value="Evento de la raza Monstruo" onclick="mapa.getMapa('mapa', 40.71744940569657, -74.03601905944689, 'new_york');"/>
+        </div>
+        <div id="imagen">
+
+        </div>
+        <h2> Consumir datos de MusicBrainz </h2>
+
+            <button id = "cargarJSON" onclick = "evento.consumirServicio()">Obtener JSON</button> 
+            <p id="cabeceraJson"></p>  
+            <p id="json" class="js"></p>  
+            <p id="contenidoServicio" class="js"></p>  
+
+        <h2> ¿Quieres que lea un XML? </h2>
+
+            <p><input type="file" accept="text/xml" id="archivo" onchange="evento.leerArchivoTexto(this.files);"></p>
+            <p id="nombreArchivo"></p>
+            <p id="tamañoArchivo"></p>
+            <p id="tipoArchivo"></p>
+            <p id="ultimaModificacion"></p>
+            <p id="contenidoArchivo" class="xml"></p>  
+            <pre id="areaTexto"></pre>
+            <p id="errorLectura"></p>
+
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Noé Fernández Moro" />
+    <meta name="description" content="Calcula el nivel de poder de un guerrero introduciendo los datos" />
+    <title>¡Calcula mi nivel!</title>
+    <link rel="stylesheet" href="Calculadora.css" />
+    <script src="Calculadora.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="../../html_css/multimedia/images/logo_DBZ.png" alt="Logo" />
+            <a href="../../html_css/1.-Saiyans.html" accesskey="h" tabindex="1">Saga de los Saiyan</a>
+            <a href="../../html_css/2.-Androids.html" accesskey="p" tabindex="2">Saga de los Androides</a>
+            <a href="../../html_css/3.-Bu.html" accesskey="r" tabindex="3">Saga del Monstruo Buu</a>
+            <a href="../¡Calcula mi nivel!/Calculadora.html" accesskey="c" tabindex="4">¡Calcula mi nivel!</a>
+            <a href="../Eventos/Eventos.html" accesskey="e" tabindex="5">Eventos</a>
+        </nav>
+        <h1>
+            ¡Calcula mi nivel!
+        </h1>
+    </header> 
+    <main>
+        <div class="calculadora">
+            <label for="poder_fisico">¡Este es mi poder fisico!:</label>
+            <input type="number" min="0" id="poder_fisico" placeholder="Ej: 100000" enabled />
+            
+            <label for="nivel_ki">¡Este es mi nivel de ki!:</label>
+            <input type="number" min="0" id="nivel_ki" placeholder="Ej: 100000" enabled />
+
+            <label for="velocidad">¡Esta es mi velocidad!:</label>
+            <input type="number" min="0" id="velocidad" placeholder="Ej: 100000" enabled />
+
+            <label for="resistencia_fisica">¡Esta es mi resistencia física!:</label>
+            <input type="number" min="0" id="resistencia_fisica" placeholder="Ej: 100000" enabled />
+
+            <input type="button" value="¡Calcula mi nivel!" id="calcula" onclick="pila.calcular()" />
+
+            <input type="number" id="resultado"  placeholder="¡Aún no lo sé!" disabled />
+
+            <input type="button" value="¡Soy un Súper Saiyan!" id="super_saiyan" onclick="pila.forma_superSaiyan()" hidden />
+            <input type="button" value="¡Soy un Súper Namekiano!" id="super_namek" onclick="pila.forma_superSaiyan()" hidden />
+            <input type="button" value="¡Soy un Demonio del Hielo al 100%!" id="forma_final" onclick="pila.forma_superSaiyan()" hidden />
+            <input type="button" value="¡Soy un Monstruo Puro!" id="forma_pura" onclick="pila.forma_superSaiyan()" hidden />
+
+            <input type="button" value="¡Volver a empezar!" id="restart" onclick="pila.restart()" hidden />
+
+        </div>
+    </main>
+</body>
+
+</html>

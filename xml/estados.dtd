@@ -1,0 +1,22 @@
+<!ELEMENT estados (estado)+>
+<!ELEMENT estado (multiplicador,apariencia,requisitos)>
+<!ATTLIST estado 
+    nombre CDATA #REQUIRED
+    desgaste CDATA #REQUIRED>
+
+<!ELEMENT multiplicador (cuerpo,ki,resistencia,agilidad)>
+<!ELEMENT apariencia (ojos,pelo,aura)>
+<!ELEMENT requisitos (poder_base,como_alcanzarla,detonante)>
+
+<!ELEMENT cuerpo (#PCDATA)>
+<!ELEMENT ki (#PCDATA)>
+<!ELEMENT resistencia (#PCDATA)>
+<!ELEMENT agilidad (#PCDATA)>
+
+<!ELEMENT ojos (#PCDATA)>
+<!ELEMENT pelo (#PCDATA)>
+<!ELEMENT aura (#PCDATA)>
+
+<!ELEMENT poder_base (#PCDATA)>
+<!ELEMENT como_alcanzarla (#PCDATA)>
+<!ELEMENT detonante (#PCDATA)>
